@@ -6,7 +6,7 @@ import pandas as pd
 
 # Load the trained pipeline
 
-pipeline = joblib.load("venv_car_price_prediction\Car_sale\Model Development\car_price_pipeline.pkl")
+pipeline = joblib.load("Car_sale/Model Development/car_price_pipeline.pkl")
 
 
 # Streamlit UI
@@ -39,3 +39,4 @@ if st.button("Predict Price"):
 
     # Display result
     st.success(f"Estimated Selling Price: R {prediction:,.2f}")
+
