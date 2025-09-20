@@ -1,4 +1,3 @@
-pip install joblib
 import streamlit as st
 import joblib
 import numpy as np
@@ -36,6 +35,7 @@ if st.button("Predict Price"):
     
     # Display result
     st.success(f"Estimated Selling Price: R {prediction:,.2f}")
+
 
 
 
