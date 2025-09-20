@@ -5,7 +5,7 @@ import pandas as pd
 import os
 
 # Load the trained pipeline - correct relative path
-pipeline = joblib.load("../Model Development/car_price_pipeline.pkl")
+pipeline = joblib.load("Car_sale/Model Development/car_price_pipeline.pkl")
 
 # Rest of your code...
 st.title("Car Price Prediction App")
@@ -35,6 +35,7 @@ if st.button("Predict Price"):
     
     # Display result
     st.success(f"Estimated Selling Price: R {prediction:,.2f}")
+
 
 
 
