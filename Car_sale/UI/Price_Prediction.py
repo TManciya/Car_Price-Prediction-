@@ -7,7 +7,7 @@ import os
 # Load the trained pipeline - correct relative path
 pipeline = joblib.load("Car_sale/Model Development/car_price_pipeline.pkl")
 
-# Rest of your code...
+
 st.title("Car Price Prediction App")
 st.subheader("Get the Estimated selling price of your car, based on its features and get your dream car price")
 st.write("Enter the details below to estimate the selling price of the car.")
@@ -35,6 +35,7 @@ if st.button("Predict Price"):
     
     # Display result
     st.success(f"Estimated Selling Price: R {prediction:,.2f}")
+
 
 
 
